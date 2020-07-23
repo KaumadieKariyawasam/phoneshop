@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.2.final using JasperReports Library version 6.2.2  -->
+<!-- 2017-08-11T14:16:19 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="GRN" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f629bb3c-e128-430f-829b-823feda50036">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="orderid" class="java.lang.String"/>
+	<parameter name="userId" class="java.lang.String"/>
+	<parameter name="SupplierNIC" class="java.lang.String"/>
+	<parameter name="Total Amount" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="Supplier Order ID" class="java.lang.String"/>
+	<field name="Field_1" class="java.lang.String"/>
+	<field name="Item Code" class="java.lang.String"/>
+	<field name="Batch ID" class="java.lang.String"/>
+	<field name="Selling Price" class="java.lang.String"/>
+	<field name="Buying Price" class="java.lang.String"/>
+	<field name="Quantity" class="java.lang.String"/>
+	<field name="Buying Amount" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="102" splitType="Stretch">
+			<staticText>
+				<reportElement x="80" y="-10" width="440" height="48" uuid="5fa65374-3fe2-471d-9b08-82e7b1de473c"/>
+				<textElement>
+					<font size="29" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Thilakawardana Phone Shop]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="40" width="147" height="30" uuid="1875c7a4-d158-4873-a437-603373fd46da"/>
+				<textElement>
+					<font size="22"/>
+				</textElement>
+				<text><![CDATA[(091-2236755)]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="99" splitType="Stretch">
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="90" y="0" width="110" height="40" uuid="679a81fe-65f2-49ab-8597-2b3d7df1da68"/>
+				<textElement>
+					<font size="19"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="0" width="90" height="40" uuid="53e5839f-31db-43ac-9d64-e24771001ea7"/>
+				<textElement>
+					<font size="22"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="90" y="50" width="110" height="30" uuid="eaa8535b-9b6f-4431-a36c-005709f25c33"/>
+				<textElement>
+					<font size="19"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{orderid}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="50" width="90" height="30" uuid="0d463620-3f81-4498-8a93-4afce97b47b1"/>
+				<textElement>
+					<font size="19"/>
+				</textElement>
+				<text><![CDATA[Order ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="50" width="90" height="30" uuid="44ee8a1e-329f-4d0a-868f-8246b278dbf6"/>
+				<textElement>
+					<font size="19"/>
+				</textElement>
+				<text><![CDATA[User ID]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="410" y="50" width="130" height="30" uuid="4db1e57d-7338-4ef6-940a-28ef22559a68"/>
+				<textElement>
+					<font size="19"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{userId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="0" width="130" height="30" uuid="0af57e2e-327f-4d89-81b4-20908a1cbd48"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{SupplierNIC}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="280" y="0" width="120" height="30" uuid="832d7740-4ef5-4a3c-9e61-68be0ddf662e"/>
+				<textElement>
+					<font size="19"/>
+				</textElement>
+				<text><![CDATA[Supplier NIC]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="12" y="0" width="88" height="30" uuid="4b10f8d3-904f-471f-a740-257624dc7938"/>
+				<text><![CDATA[Supplier Order ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="0" width="80" height="30" uuid="0823ceb9-3034-4bb5-8e21-ee32e75cc7cb"/>
+				<text><![CDATA[Item Code]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="0" width="80" height="30" uuid="fe80cfee-9b97-4645-9f3d-384ba30a9f36"/>
+				<text><![CDATA[Batch ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="260" y="0" width="80" height="30" uuid="acd6e599-32ca-4eba-a20b-c4bdd8c63438"/>
+				<text><![CDATA[Selling Price]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="340" y="0" width="80" height="30" uuid="fa773a2d-57b2-42bd-bfd2-e2d43dba4c8f"/>
+				<text><![CDATA[Buying Price]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="0" width="60" height="30" uuid="aca04fa5-c982-43f7-aa25-5c3021b071c9"/>
+				<text><![CDATA[Quantity]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="0" width="85" height="30" uuid="c237bc8f-bf87-4916-ad2f-1b7ebb711e8a"/>
+				<text><![CDATA[Buying Amount]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="48" splitType="Stretch">
+			<textField>
+				<reportElement x="12" y="0" width="88" height="30" uuid="11566fbb-5b46-41a6-a0ca-dbb37bc365b6"/>
+				<textFieldExpression><![CDATA[$F{Supplier Order ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="0" width="80" height="30" uuid="145b05d3-343b-4a9f-938a-4a5cdcda64ef"/>
+				<textFieldExpression><![CDATA[$F{Item Code}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="0" width="80" height="30" uuid="1ca10866-521b-4587-a19c-3737d6cf0e2a"/>
+				<textFieldExpression><![CDATA[$F{Batch ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="0" width="80" height="30" uuid="21f3f508-9daa-40c8-b4c7-b5d8a86dde8b"/>
+				<textFieldExpression><![CDATA[$F{Selling Price}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="340" y="0" width="80" height="30" uuid="940c0332-e8e0-4c60-afbc-55ee4d683e9f"/>
+				<textFieldExpression><![CDATA[$F{Buying Price}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="420" y="0" width="60" height="30" uuid="00cf1711-8031-4ffa-8ea7-36f2a093b61a"/>
+				<textFieldExpression><![CDATA[$F{Quantity}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="480" y="0" width="85" height="30" uuid="d1f3d578-2b7f-4dab-a328-b9cf6a113118"/>
+				<textFieldExpression><![CDATA[$F{Buying Amount}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="81" splitType="Stretch">
+			<staticText>
+				<reportElement x="310" y="10" width="100" height="30" uuid="aa3db82a-df85-492c-af83-3201b733bf64"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Total Amount]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="420" y="10" width="100" height="30" uuid="b08b7074-66ba-4de6-8c52-fc7c1c63280f"/>
+				<textFieldExpression><![CDATA[$P{Total Amount}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>
